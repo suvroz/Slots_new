@@ -1,0 +1,168 @@
+body{
+	margin:0px;
+	font-family:helvetica,sans-serif;
+	font-size:12px;
+	-webkit-touch-callout: none; 					/* prevent callout to copy image, etc when tap to hold */
+	-webkit-text-size-adjust: none; 				/* prevent webkit from resizing text to fit */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 	/* make transparent link selection, adjust last value opacity 0 to 1.0 */
+	-webkit-user-select: none; 						/* prevent copy paste, to allow, change 'none' to 'text' */
+	-moz-user-select: none;
+	background-color:#1F83C5;
+}
+@media all and (min-height: 400px) {
+body{
+	font-size:24px;
+}
+}
+
+#scale_container{
+	position:relative;
+	margin:auto;
+	width:100%;
+	height:360px;
+}
+@media all and (min-height: 400px) {
+#scale_container{
+	width:200%;
+	height:720px;
+}
+}
+
+#game_container, #game_loader, #dark_screen, #orientation_message{
+	position:absolute;
+	
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+@media all and (min-height: 400px) {
+#game_container, #game_loader, #dark_screen, #orientation_message{
+	width:200%;
+	height:200%;
+}
+}
+
+#game_loader{
+	background-color:#1F83C5;
+}
+
+.initloader{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -16px;
+	margin-top: -16px;
+	width: 31px;
+	height: 31px;
+	background-image: url(images/initloader.gif);
+}
+@media all and (min-height: 400px) {
+.initloader{
+	width: 62px;
+	height: 62px;
+	background-image: url(images_hd/initloader.gif);
+}
+}
+
+#dark_screen{
+	background-color:#1F83C5;
+	opacity:0;
+	filter:alpha(opacity=0);
+	display:none;
+}
+
+.popup {
+	position: absolute;
+	width: 297px;
+	height: 220px;
+	background-image: url(images/popups.png);
+	background-position: -1px -1px;
+	display: none;
+	z-index: 1;
+}
+@media all and (min-height: 400px) {
+.popup {
+	width: 594px;
+	height: 440px;
+	background-image: url(images_hd/popups.png);
+	background-position: -1px -1px;
+	display: none;
+	z-index: 1;
+}
+}
+
+.msg_title, .msg_text {
+	position: relative;
+	padding: 7px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+@media all and (min-height: 400px) {
+.msg_title, .msg_text {
+	font-size: 32px;
+}
+}
+
+#orientation_message_container .msg_text {
+	top: 40px;
+}
+
+#orientation_message{
+	width:320px;
+	height:417px;
+	background-color: #48B6E4;
+	display:none;
+}
+@media all and (min-height: 400px) {
+#orientation_message{
+	width:640px;
+	height:834px;
+}
+}
+
+#orientation_message_container {
+	position: relative;
+	margin: 73px auto 0 auto;
+	display: block;
+}
+@media all and (min-height: 400px) {
+#orientation_message_container {
+	position: relative;
+	margin: 73px auto 0 auto;
+	display: block;
+}
+}
+
+#iphone {
+	position: absolute;
+	left: 114px;
+	top: 92px;
+	width: 67px;
+	height: 110px;
+	background-image: url(images/popups.png);
+	background-position: -6px -318px;
+	-webkit-transform-origin: 33px 55px;
+}
+@media all and (min-height: 400px) {
+#iphone {
+	width: 134px;
+	height: 220px;
+	background-image: url(images_hd/popups.png);
+}
+}
+
+.portrait #scale_container, .portrait #game_container, .portrait #game_loader, .portrait #dark_screen{
+	width:320px;
+	height:417px;
+}
+@media all and (min-height: 400px) {
+.portrait #scale_container, .portrait #game_container, .portrait #game_loader, .portrait #dark_screen{
+	width:640px;
+	height:834px;
+}
+}
+
+.portrait #orientation_message{
+	display:block;
+}

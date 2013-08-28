@@ -1,0 +1,220 @@
+.info_component{
+	position:relative;
+	float:left;
+	width:50%;
+}
+
+.info_component div{
+	position:relative;
+	float:left;
+	padding-left: 6px;
+	padding-top: 5px;
+}
+
+@media all and (min-height: 400px) {
+.info_component div{
+	padding-left: 12px;
+	padding-top: 10px;
+}
+}
+
+.icon1{
+	position:absolute;
+	left:0px;
+	top:0px;
+	overflow:hidden;
+}
+
+.reel{
+	position: relative;
+	float: left;
+	visibility:hidden;
+}
+
+.button_container{
+	position:absolute;
+}
+
+.button, .button_overlay, .button_shadow{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+}
+@media all and (min-height: 400px) {
+.button, .button_overlay, .button_shadow{
+	width:100%;
+	height:100%;
+}
+}
+
+.grouped_button_element{
+	position:relative;
+	float:left;
+	width:33.33%;
+	height:100%;
+}
+@media all and (min-height: 400px) {
+.grouped_button_element{
+	width:33.33%;
+	height:100%;
+}
+}
+
+.grouped_button_element .text_label{
+	position:relative;
+	margin:4px auto 0px;
+	height: 9px;
+}
+@media all and (min-height: 400px) {
+.grouped_button_element .text_label{
+	margin:8px auto 0px;
+	height: 18px;
+}
+}
+
+.gbelement_value{
+	width: 100%;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+@media all and (min-height: 400px) {
+.gbelement_value{
+	width: 100%;
+	font-size: 24px;
+}
+}
+
+.overlay_panel{
+	position:absolute;
+	left: 66px;
+	top: 164px;
+	width: 348px;
+	height: 55px;
+	display:none;
+}
+@media all and (min-height: 400px) {
+.overlay_panel{
+    left: 132px;
+	top: 328px;
+	width: 696px;
+	height: 110px;
+}
+}
+
+.overlay_panel div{
+	filter:inherit;
+}
+
+.opanel_bg{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+}
+@media all and (min-height: 400px) {
+.opanel_bg{
+	width:100%;
+	height:100%;
+}
+}
+
+.pay_panel{
+	position:relative;
+	display:none;
+}
+
+.pay_bg{
+	position:absolute;
+	
+	width:480px;
+	height:268px;
+	background-image:url(images/paytable.jpg);
+}
+@media all and (min-height: 400px) {
+.pay_bg{
+	width:960px;
+	height:536px;
+	background-image:url(images_hd/paytable.jpg);
+}
+}
+
+.group_label{
+	position: absolute;
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+}
+@media all and (min-height: 400px) {
+.group_label{
+	width: 100%;
+}
+}
+
+.controls_field{
+	position: absolute;
+	left: 0px;
+	top: 13px;
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+@media all and (min-height: 400px) {
+.controls_field{
+ 	top: 26px;
+	width: 100%;
+	font-size: 40px;
+}
+}
+
+#loadbar{
+	position:absolute;
+	left:190px;
+	top:259px;
+	width:100px;
+	height:5px;
+	background-image:url(images/loadbar.gif);
+	display:none;
+}
+@media all and (min-height: 400px) {
+#loadbar{
+	left:380px;
+	top:518px;
+	width:200px;
+	height:10px;
+	background-image:url(images/loadbar.gif);
+}
+}
+
+.lwp_bg{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+@media all and (min-height: 400px) {
+.lwp_bg{
+	width: 100%;
+	height: 100%;
+}
+}
+
+
+#linewin_amt{
+	position: absolute;
+	left: 0px;
+	top: 2px;
+	width: 100%;
+	text-align: center;
+}
+@media all and (min-height: 400px) {
+#linewin_amt{
+    top: 4px;
+	width: 100%;
+}
+}
